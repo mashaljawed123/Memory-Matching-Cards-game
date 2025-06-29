@@ -1,1 +1,105 @@
-mashal
+# 🎮 Memory Matching Game
+
+> Console-based memory card matching game built in C++.
+
+![Made for Windows](https://img.shields.io/badge/platform-Windows-blue)
+![Project Type](https://img.shields.io/badge/type-Console%20Game-orange)
+![Language](https://img.shields.io/badge/language-C++-brightgreen)
+
+
+### 👨‍💻 Developers:
+
+* **Rida** (22k-4409)
+* **Mashal** (22k-4552)
+* **Mehdi** (22k-4480)
+
+
+## 📌 Description
+
+The **Memory Matching Game** is a simple card-matching puzzle game that runs in the console. Players must flip and match hidden card pairs with the fewest attempts possible. This game features:
+
+* Multiple customizable rounds
+* A dynamically generated game board
+* Scoring system with history tracking
+* Game summary with high score display
+
+
+## 🧩 How to Play
+
+1. **Start the Game**
+   Press any key when prompted.
+
+2. **Input Game Settings**
+
+   * Select number of rounds (1–10)
+   * Choose an even board size (e.g., 4, 6, 8)
+
+3. **Memorize the Cards**
+   Cards will be shown for 3 seconds before hiding.
+
+4. **Start Matching**
+   Enter two positions to flip cards and try matching them.
+
+5. **Win the Round**
+   Complete the board with the fewest attempts to maximize score.
+
+6. **View Performance**
+   After the final round, a summary with sorted scores and high score is shown.
+
+
+## 🛠 Requirements
+
+* **Windows OS** (Uses `windows.h`, `conio.h`)
+* **C++17 or later** (Compatible with MSVC, MinGW)
+
+
+## 📂 Project Structure
+
+```
+📁 MemoryMatchingGame
+├── MemoryMatchingGame.cpp   # Main source file
+└── README.md                # Project documentation
+```
+
+
+## 🎨 Features
+
+* Customizable board size and number of rounds
+* Live attempts and round tracker
+* Card-flipping animation using ASCII and `SetConsoleCursorPosition`
+* Color-coded text and borders
+* Recursive linked list and stack-based score tracking
+* High score system with in-memory quicksort
+
+
+## 🧠 Concepts Used
+
+* Linked Lists (`Node` class for cards)
+* Stack (`Score` class for scoring)
+* Recursion
+* Sorting Algorithm (Quicksort)
+* Console UI with cursor manipulation and color
+* Randomized board generation
+
+
+## ⚠ Limitations
+
+* **Windows-only** (due to `windows.h`, `SetConsoleCursorPosition`, etc.)
+* No persistence (scores reset after exit)
+* No input sanitization for invalid characters
+
+
+## 💡 Future Improvements
+
+* 🎯 Add file I/O for saving high scores
+* 🌐 Make it cross-platform using `ncurses` or `SFML`
+* 🎮 Add UI improvements and menu system
+* 📊 Add difficulty levels and time-based scoring
+
+## 📝 License
+
+This project was created for educational purposes and is free to use or modify under a permissive license.
+
+> **Note:** Always credit the original authors if reused in academic settings.
+
+Feel free to fork and improve this project!
